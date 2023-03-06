@@ -4,5 +4,5 @@ import BasicAuthPage from '../../pages/basicAuth/basicAuth.page';
 test(`Login Basic`, async ({ page }) => {
     const basicAuthPage = new BasicAuthPage(page)
     await basicAuthPage.clickBtnBasicAuth()
-    expect(true)
+    await expect(page).toHaveTitle(/.*checkout/) // para quebrar o teste
 })

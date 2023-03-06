@@ -48,7 +48,7 @@ module.exports = defineConfig({
     // 'off' - Do not capture screenshots.
     // 'on' - Capture screenshot after each test.
     // 'only-on-failure' - Capture screenshot after each test failure.
-    screenshot: 'on'
+    screenshot: 'only-on-failure'
   },
 
   /* Configure projects for major browsers */
