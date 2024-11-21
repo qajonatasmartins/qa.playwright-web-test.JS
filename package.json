@@ -2,21 +2,21 @@
   "name": "qa.playwright-web-test.js",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
-  "repository": "https://github.com/qajonatasmartins/qa.playwright-web-test.JS.git",
-  "author": "qajonatasmartins",
-  "license": "MIT",
-  "devDependencies": {
-    "@playwright/test": "^1.31.2",
-    "allure-playwright": "^2.1.0"
-  },
   "scripts": {
-    "report": "npx playwright show-report",
-    "test": "npx playwright test",
-    "codegen": "npx playwright codegen demo.playwright.dev/todomvc",
-    "allure": "allure serve ./allure-results/"
+    "e2e": "npx playwright test",
+    "ui-mode": "npx playwright test --ui",
+    "desktop-chrome": "npx playwright test --project=chromium",
+    "test-example": "npx playwright test example",
+    "test-debug": "npx playwright test --debug",
+    "codegen": "npx playwright codegen",
+    "show-report": "npx playwright show-report"
   },
-  "dependencies": {
-    "dotenv": "^16.0.3"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.1"
   }
 }
